@@ -1,22 +1,25 @@
 # TFT000001
 
-TFT000001��Raspberry Pi Pico��C/C++�J������pico-sdk�p�̃O���t�B�b�N�X���C�u�����ł��B  
-�v���O�����S�̂�C++�ŏ�����Ă��āAC++�p�̃��C�u�����ɂȂ��Ă܂��B  
-TFT000001��ILI9486��ILI9341���ڂ�LCD�ɑΉ����Ă��܂��B  
-�܂��A�����\���͂ł��܂���B  
+TFT000001はRaspberry Pi PicoのC/C++開発環境のpico-sdk用のグラフィックスライブラリです。  
+プログラム全体がC++で書かれていて、C++用のライブラリになってます。  
+TFT000001はILI9486とILI9341搭載のLCDに対応しています。  
+まだ、文字表示はできません。  
 
-�r���h����O�ɕK���ATFT000001_config.h��ҏW����8BIT PARALLEL�Ȃ̂�SPI�Ȃ̂�  
-ILI9486�Ȃ̂�ILI9341�Ȃ̂��̐ݒ���s���Ă��������B  
+ビルドする前に必ず、TFT000001_config.hを編集して8BIT PARALLELなのかSPIなのか  
+ILI9486なのかILI9341なのかの設定を行ってください。  
 
-TFT000001��Adafruit-GFX-Library��Humblesoft_ILI9341��TFT_eSPI�����ɍ���Ă��܂�  
+TFT000001はAdafruit-GFX-LibraryとHumblesoft_ILI9341とTFT_eSPIを元に作られています  
     <https://github.com/adafruit/Adafruit-GFX-Library>  
     <https://github.com/h-nari/Humblesoft_ILI9341>  
     <https://github.com/Bodmer/TFT_eSPI>  
 
-�܂��A����i�K�Ȃ̂ł��������������B
+まだ、試作段階なのでご了承ください。
 
-ILI9486��LCD��aitendo��M035C9486LB3��8bit PARALLEL�ASPI�Ƃ��ɓ���m�F���Ă܂��B
-ILI9341��LCD��SPI�݂̂̑Ή��ł��B
+ILI9486のLCDはaitendoのM035C9486LB3で8bit PARALLEL、SPIともに動作確認してます。  
+ILI9486で8bit PARALLELの場合、16bitカラー、18bitカラー両方に対応してます。  
+ILI9486でSPI接続の場合、18bitカラーのみになります。  
+ILI9341のLCDはSPIのみの対応です。  
+ILI9341は16bitカラーのみです。  
 
-## �ύX����
-* 0.0.1          2022/03/21 ���ŃA�b�v  
+## 変更履歴
+* 0.0.1          2022/03/21 初版アップ  
