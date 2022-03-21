@@ -18,6 +18,7 @@ TFT000001はAdafruit-GFX-LibraryとHumblesoft_ILI9341とTFT_eSPIを元に作ら�
 ILI9486のLCDはaitendoのM035C9486LB3で8bit PARALLEL、SPIともに動作確認してます。  
 ILI9486で8bit PARALLELの場合、16bitカラー、18bitカラー両方に対応してます。  
 ILI9486でSPI接続の場合、18bitカラーのみになります。  
+ILI9486はSPI接続でも動作しますが、お勧めは8bit PARALLELです。  
 ILI9341のLCDはSPIのみの対応です。  
 ILI9341は16bitカラーのみです。  
 
