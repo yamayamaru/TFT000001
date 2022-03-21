@@ -25,7 +25,7 @@ SPIでのソースコードの例では実際のピン番号は下記のよう�
 8BIT_PARALELLでのソースコードの例では実際のピン番号は下記のようになります。
 この他にLCD側のRDピンはVCCにCSピンはGNDにつないでください。  
 この他にLCD側のRDピンはVCCにCSピンはGNDにつないでください。  
-(8BIT_PARALELLではTFT_D0からTFT_D7は必ず連番のGPIOの番号を指定してください)
+(8BIT_PARALELLではTFT_D0からTFT_D7は必ず連番のGPIOの番号を指定してください)  
   #define TFT_DC   14    // ピン番号19  
   #define TFT_RST  15    // ピン番号20  
   #define TFT_WR   22    // ピン番号29  
