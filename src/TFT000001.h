@@ -1,5 +1,5 @@
 // TFT000001.h
-// Version : 0.0.1
+// Version : 0.0.2
 //
 //    ILI9486, ILI9341 LCD Graphics Library for Raspberry Pi Pico
 //                                         https://twitter.com/yama23238
@@ -697,6 +697,7 @@ public:
 void set_rotation(int rotation);
 void set_rotation_ILI9486(int rotation);
 void set_rotation_ILI9341(int rotation);
+void setRotation(uint8_t mode);
 void init(uint32_t bit18_flag = 0, int32_t display_driver = -1);
 void init_ILI9486(uint32_t bit18_flag = 0);
 void init_ILI9341(void);

@@ -1,5 +1,5 @@
 // TFT000001.cpp
-// Version : 0.0.1
+// Version : 0.0.2
 //
 //    ILI9486, ILI9341 LCD Graphics Library for Raspberry Pi Pico
 //                                         https://twitter.com/yama23238
@@ -1036,7 +1036,7 @@ uint16_t yama_2_GFX_H_beta::color565(uint32_t color) {
 
 uint32_t yama_2_GFX_H_beta::colorRGB24(uint32_t colr, uint32_t colg, uint32_t colb) {
     uint32_t col;
-    col = ((colr & 0xff) << 16) | ((colb & 0xff) << 8) | (colb & 0xff);
+    col = ((colr & 0xff) << 16) | ((colg & 0xff) << 8) | (colb & 0xff);
     return col;  
 }
 
@@ -1052,7 +1052,7 @@ uint32_t yama_2_GFX_H_beta::color(uint32_t colr, uint32_t colg, uint32_t colb) {
         return (uint32_t)color565(colr, colg, colb);
     }
     uint32_t col;
-    col = ((colr & 0xff) << 16) | ((colb & 0xff) << 8) | (colb & 0xff);
+    col = ((colr & 0xff) << 16) | ((colg & 0xff) << 8) | (colb & 0xff);
     return col;
 }
 
@@ -2021,6 +2021,10 @@ void TFT000001::set_rotation(int mode) {
     } else if (_display_driver == TFT000001_ILI9341_DRIVER) {
         set_rotation_ILI9341(mode);
     }
+}
+
+void TFT000001::setRotation(uint8_t mode) {
+    set_rotation(mode);
 }
 
 #ifdef TFT000001_SPI_DRAW02_MODE
