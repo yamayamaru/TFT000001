@@ -24,3 +24,5 @@ ILI9341は16bitカラーのみです。
 
 ## 変更履歴
 * 0.0.1          2022/03/21 初版アップ  
+* 0.0.2          2022/06/22 yama_2_GFX_H_beta::color(), yama_2_GFX_H_beta::colorRGB24()を修正  
+                            TFT00000::setRotation()の追加  
