@@ -23,7 +23,7 @@ SPIでのソースコードの例では実際のピン番号は下記のよう�
 #define TFT_SPI_PORT  spi0  
   
 また、aitendoのM035C9486LB3の場合のLCD側のSCKはWRになります。  
-(データシートで確認した所、ILI9486ではSCKとWRが共通のピンでした) 
+(データシートで確認した所、ILI9486ではSCKとWRが共通のピンでした)   
 DCピンはRSになります。  
   
   
