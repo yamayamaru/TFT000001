@@ -3,7 +3,9 @@
 TFT000001はRaspberry Pi PicoのC/C++開発環境のpico-sdk用のグラフィックスライブラリです。  
 プログラム全体がC++で書かれていて、C++用のライブラリになってます。  
 TFT000001はILI9486とILI9341搭載のLCDに対応しています。  
-まだ、文字表示はできません。  
+  
+文字表示するには別途print_TFT000001も使ってください。  
+https://github.com/yamayamaru/print_TFT000001  
 
 ビルドする前に必ず、TFT000001_config.hを編集して8BIT PARALLELなのかSPIなのか  
 ILI9486なのかILI9341なのかの設定を行ってください。  
