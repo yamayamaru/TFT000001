@@ -21,6 +21,10 @@ SPIでのソースコードの例では実際のピン番号は下記のよう�
 画像からGP19、GP18、GP17、GP16のSPIはSPI0なので  
 ソースコードの例ではSPIのポート番号は下記のようにspi0を指定してます  
 #define TFT_SPI_PORT  spi0  
+  
+また、aitendoのM035C9486LB3の場合のLCD側のSCKはWRになります。  
+(データシートで確認した所、ILI9486ではSCKとWRが共通のピンでした)  
+DCピンはRSになります。  
 
 8BIT_PARALELLでのソースコードの例では実際のピン番号は下記のようになります。  
 この他にLCD側のRDピンはVCCにCSピンはGNDにつないでください。  
