@@ -3240,7 +3240,7 @@ yama_2_GFX_H_beta_Canvas16::yama_2_GFX_H_beta_Canvas16(uint32_t w, uint32_t h) :
   if ((buffer = (uint16_t *)malloc(bytes))) {
     memset(buffer, 0, bytes);
   }
-  setColorMode24();
+  setColorMode16();
 }
  
 /**************************************************************************/
