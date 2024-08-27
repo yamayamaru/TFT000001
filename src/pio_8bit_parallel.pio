@@ -24,7 +24,7 @@ public block_fill:
    pull
    // Move pixel count to y.
    mov y, osr
-next:
+next1:
    // Copy colour value into osr, colour in LS 16 bits.
    mov osr, x side 1
    // Output colour 8 MS bits, unwanted top 16 bits shifted through.
@@ -34,7 +34,7 @@ next:
    // Write second colour byte.
    out pins, 8 side 0 [1]
    // Decrement pixel count and loop.
-   jmp y--, next side 1
+   jmp y--, next1 side 1
 
 .wrap_target
 // Transmit an 8 bit value (LS 8 bits of 32 bits).
