@@ -32,6 +32,10 @@
 //      これらのプログラムで発生したいかなる損害、データの消失、金銭等の責任は一切負いません。
 //
 
+//#pragma GCC optimize ("O2")
+#pragma GCC optimize ("Os")
+
+
 #include "TFT000001.h"
 
 yama_2_GFX_H_beta::yama_2_GFX_H_beta(int32_t w, int32_t h) {
